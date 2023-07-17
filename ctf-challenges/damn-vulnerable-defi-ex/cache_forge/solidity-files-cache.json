@@ -907,6 +907,51 @@
         }
       }
     },
+    "contracts/naive-receiver/NaivereveiverAttack.sol": {
+      "lastModificationDate": 1689602442057,
+      "contentHash": "f3a34a40d6a3e96311b58610490dfba4",
+      "sourceName": "contracts/naive-receiver/NaivereveiverAttack.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/console.sol"
+      ],
+      "versionRequirement": "=0.8.19",
+      "artifacts": {
+        "LenderPool": {
+          "0.8.19+commit.7dd6d404.Darwin.appleclang": "NaivereveiverAttack.sol/LenderPool.json"
+        },
+        "NaiveReceiverAttack": {
+          "0.8.19+commit.7dd6d404.Darwin.appleclang": "NaivereveiverAttack.sol/NaiveReceiverAttack.json"
+        }
+      }
+    },
     "contracts/puppet/PuppetPool.sol": {
       "lastModificationDate": 1688492880268,
       "contentHash": "4d74af696d7a0da03b796623c08f9732",
@@ -5687,6 +5732,71 @@
       "artifacts": {
         "SafeTransferLib": {
           "0.8.19+commit.7dd6d404.Darwin.appleclang": "src/utils/SafeTransferLib.sol/SafeTransferLib.json"
+        }
+      }
+    },
+    "test/naive-receiver/NaiveReceiverTest.sol": {
+      "lastModificationDate": 1689602411883,
+      "contentHash": "66a25328138b3d0373918e844035660e",
+      "sourceName": "test/naive-receiver/NaiveReceiverTest.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/naive-receiver/FlashLoanReceiver.sol",
+        "contracts/naive-receiver/NaiveReceiverLenderPool.sol",
+        "contracts/naive-receiver/NaivereveiverAttack.sol",
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/StdAssertions.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdError.sol",
+        "lib/forge-std/src/StdInvariant.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "node_modules/@openzeppelin/contracts/interfaces/IERC3156FlashBorrower.sol",
+        "node_modules/@openzeppelin/contracts/interfaces/IERC3156FlashLender.sol",
+        "node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "node_modules/solady/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.19",
+      "artifacts": {
+        "NaiveReceiverTest": {
+          "0.8.19+commit.7dd6d404.Darwin.appleclang": "NaiveReceiverTest.sol/NaiveReceiverTest.json"
         }
       }
     },
