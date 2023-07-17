@@ -1,0 +1,602 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212204bd35a542ad82e00c5f95f79afc7b380a221f759104e33d818d82c13bef8e64a64736f6c63430008130033",
+    "sourceMap": "199:1374:42:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea26469706673582212204bd35a542ad82e00c5f95f79afc7b380a221f759104e33d818d82c13bef8e64a64736f6c63430008130033",
+    "sourceMap": "199:1374:42:-:0;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.pm>\",\"kind\":\"dev\",\"methods\":{},\"title\":\"SignatureDecoder - Decodes signatures that a encoded as bytes\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@gnosis.pm/safe-contracts/contracts/common/SignatureDecoder.sol\":\"SignatureDecoder\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@gnosis.pm/=node_modules/@gnosis.pm/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@uniswap/=node_modules/@uniswap/\",\":base64-sol/=node_modules/base64-sol/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\",\":solady/=node_modules/solady/\",\":solmate/=node_modules/solmate/\"]},\"sources\":{\"node_modules/@gnosis.pm/safe-contracts/contracts/common/SignatureDecoder.sol\":{\"keccak256\":\"0x2d37be182472ccfee62a33e9939f9b3d509be4c32e9fdebc2c1746c573655987\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://f76d96f10640beee7d4b4ad119bd3c64aeb26929011d9c1eec738c63ebc92f63\",\"dweb:/ipfs/QmaqgDocQumKeyUMgZU7STzpTASQjDbUxbQKuZ17xhLaXz\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@gnosis.pm/=node_modules/@gnosis.pm/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@uniswap/=node_modules/@uniswap/",
+        ":base64-sol/=node_modules/base64-sol/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/",
+        ":solady/=node_modules/solady/",
+        ":solmate/=node_modules/solmate/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@gnosis.pm/safe-contracts/contracts/common/SignatureDecoder.sol": "SignatureDecoder"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@gnosis.pm/safe-contracts/contracts/common/SignatureDecoder.sol": {
+        "keccak256": "0x2d37be182472ccfee62a33e9939f9b3d509be4c32e9fdebc2c1746c573655987",
+        "urls": [
+          "bzz-raw://f76d96f10640beee7d4b4ad119bd3c64aeb26929011d9c1eec738c63ebc92f63",
+          "dweb:/ipfs/QmaqgDocQumKeyUMgZU7STzpTASQjDbUxbQKuZ17xhLaXz"
+        ],
+        "license": "LGPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@gnosis.pm/safe-contracts/contracts/common/SignatureDecoder.sol",
+    "id": 7045,
+    "exportedSymbols": {
+      "SignatureDecoder": [
+        7044
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "42:1532:42",
+    "nodes": [
+      {
+        "id": 7026,
+        "nodeType": "PragmaDirective",
+        "src": "42:31:42",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 7044,
+        "nodeType": "ContractDefinition",
+        "src": "199:1374:42",
+        "nodes": [
+          {
+            "id": 7043,
+            "nodeType": "FunctionDefinition",
+            "src": "612:959:42",
+            "nodes": [],
+            "body": {
+              "id": 7042,
+              "nodeType": "Block",
+              "src": "802:769:42",
+              "nodes": [],
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "1035:530:42",
+                    "statements": [
+                      {
+                        "nodeType": "YulVariableDeclaration",
+                        "src": "1049:34:42",
+                        "value": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "1073:4:42",
+                              "type": "",
+                              "value": "0x41"
+                            },
+                            {
+                              "name": "pos",
+                              "nodeType": "YulIdentifier",
+                              "src": "1079:3:42"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "mul",
+                            "nodeType": "YulIdentifier",
+                            "src": "1069:3:42"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "1069:14:42"
+                        },
+                        "variables": [
+                          {
+                            "name": "signaturePos",
+                            "nodeType": "YulTypedName",
+                            "src": "1053:12:42",
+                            "type": ""
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "YulAssignment",
+                        "src": "1096:52:42",
+                        "value": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "name": "signatures",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "1111:10:42"
+                                },
+                                {
+                                  "arguments": [
+                                    {
+                                      "name": "signaturePos",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "1127:12:42"
+                                    },
+                                    {
+                                      "kind": "number",
+                                      "nodeType": "YulLiteral",
+                                      "src": "1141:4:42",
+                                      "type": "",
+                                      "value": "0x20"
+                                    }
+                                  ],
+                                  "functionName": {
+                                    "name": "add",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "1123:3:42"
+                                  },
+                                  "nodeType": "YulFunctionCall",
+                                  "src": "1123:23:42"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "add",
+                                "nodeType": "YulIdentifier",
+                                "src": "1107:3:42"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "1107:40:42"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "mload",
+                            "nodeType": "YulIdentifier",
+                            "src": "1101:5:42"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "1101:47:42"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "r",
+                            "nodeType": "YulIdentifier",
+                            "src": "1096:1:42"
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "YulAssignment",
+                        "src": "1161:52:42",
+                        "value": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "name": "signatures",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "1176:10:42"
+                                },
+                                {
+                                  "arguments": [
+                                    {
+                                      "name": "signaturePos",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "1192:12:42"
+                                    },
+                                    {
+                                      "kind": "number",
+                                      "nodeType": "YulLiteral",
+                                      "src": "1206:4:42",
+                                      "type": "",
+                                      "value": "0x40"
+                                    }
+                                  ],
+                                  "functionName": {
+                                    "name": "add",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "1188:3:42"
+                                  },
+                                  "nodeType": "YulFunctionCall",
+                                  "src": "1188:23:42"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "add",
+                                "nodeType": "YulIdentifier",
+                                "src": "1172:3:42"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "1172:40:42"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "mload",
+                            "nodeType": "YulIdentifier",
+                            "src": "1166:5:42"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "1166:47:42"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "s",
+                            "nodeType": "YulIdentifier",
+                            "src": "1161:1:42"
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "YulAssignment",
+                        "src": "1492:63:42",
+                        "value": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "arguments": [
+                                    {
+                                      "name": "signatures",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "1511:10:42"
+                                    },
+                                    {
+                                      "arguments": [
+                                        {
+                                          "name": "signaturePos",
+                                          "nodeType": "YulIdentifier",
+                                          "src": "1527:12:42"
+                                        },
+                                        {
+                                          "kind": "number",
+                                          "nodeType": "YulLiteral",
+                                          "src": "1541:4:42",
+                                          "type": "",
+                                          "value": "0x41"
+                                        }
+                                      ],
+                                      "functionName": {
+                                        "name": "add",
+                                        "nodeType": "YulIdentifier",
+                                        "src": "1523:3:42"
+                                      },
+                                      "nodeType": "YulFunctionCall",
+                                      "src": "1523:23:42"
+                                    }
+                                  ],
+                                  "functionName": {
+                                    "name": "add",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "1507:3:42"
+                                  },
+                                  "nodeType": "YulFunctionCall",
+                                  "src": "1507:40:42"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "mload",
+                                "nodeType": "YulIdentifier",
+                                "src": "1501:5:42"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "1501:47:42"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "1550:4:42",
+                              "type": "",
+                              "value": "0xff"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "and",
+                            "nodeType": "YulIdentifier",
+                            "src": "1497:3:42"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "1497:58:42"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "v",
+                            "nodeType": "YulIdentifier",
+                            "src": "1492:1:42"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "evmVersion": "paris",
+                  "externalReferences": [
+                    {
+                      "declaration": 7032,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "1079:3:42",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 7037,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "1096:1:42",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 7039,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "1161:1:42",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 7030,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "1111:10:42",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 7030,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "1176:10:42",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 7030,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "1511:10:42",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 7035,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "1492:1:42",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 7041,
+                  "nodeType": "InlineAssembly",
+                  "src": "1026:539:42"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 7028,
+              "nodeType": "StructuredDocumentation",
+              "src": "231:376:42",
+              "text": "@dev divides bytes signature into `uint8 v, bytes32 r, bytes32 s`.\n @notice Make sure to peform a bounds check for @param pos, to avoid out of bounds access on @param signatures\n @param pos which signature to read. A prior bounds check of this parameter should be performed, to avoid out of bounds access\n @param signatures concatenated rsv signatures"
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "signatureSplit",
+            "nameLocation": "621:14:42",
+            "parameters": {
+              "id": 7033,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7030,
+                  "mutability": "mutable",
+                  "name": "signatures",
+                  "nameLocation": "649:10:42",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7043,
+                  "src": "636:23:42",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7029,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "636:5:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7032,
+                  "mutability": "mutable",
+                  "name": "pos",
+                  "nameLocation": "669:3:42",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7043,
+                  "src": "661:11:42",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7031,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "661:7:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "635:38:42"
+            },
+            "returnParameters": {
+              "id": 7040,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7035,
+                  "mutability": "mutable",
+                  "name": "v",
+                  "nameLocation": "740:1:42",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7043,
+                  "src": "734:7:42",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 7034,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "734:5:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7037,
+                  "mutability": "mutable",
+                  "name": "r",
+                  "nameLocation": "763:1:42",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7043,
+                  "src": "755:9:42",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 7036,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "755:7:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7039,
+                  "mutability": "mutable",
+                  "name": "s",
+                  "nameLocation": "786:1:42",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7043,
+                  "src": "778:9:42",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 7038,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "778:7:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "720:77:42"
+            },
+            "scope": 7044,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "SignatureDecoder",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 7027,
+          "nodeType": "StructuredDocumentation",
+          "src": "75:124:42",
+          "text": "@title SignatureDecoder - Decodes signatures that a encoded as bytes\n @author Richard Meissner - <richard@gnosis.pm>"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          7044
+        ],
+        "name": "SignatureDecoder",
+        "nameLocation": "208:16:42",
+        "scope": 7045,
+        "usedErrors": []
+      }
+    ],
+    "license": "LGPL-3.0-only"
+  },
+  "id": 42
+}

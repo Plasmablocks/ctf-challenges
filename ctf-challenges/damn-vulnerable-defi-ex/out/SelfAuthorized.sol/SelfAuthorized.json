@@ -1,0 +1,392 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212209d80e350b2b6cb9db081793b7890d34f3917cf3a3e3b8914a25ad820690ef48564736f6c63430008130033",
+    "sourceMap": "201:276:41:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea26469706673582212209d80e350b2b6cb9db081793b7890d34f3917cf3a3e3b8914a25ad820690ef48564736f6c63430008130033",
+    "sourceMap": "201:276:41:-:0;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.pm>\",\"kind\":\"dev\",\"methods\":{},\"title\":\"SelfAuthorized - authorizes current contract to perform actions\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@gnosis.pm/safe-contracts/contracts/common/SelfAuthorized.sol\":\"SelfAuthorized\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@gnosis.pm/=node_modules/@gnosis.pm/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@uniswap/=node_modules/@uniswap/\",\":base64-sol/=node_modules/base64-sol/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\",\":solady/=node_modules/solady/\",\":solmate/=node_modules/solmate/\"]},\"sources\":{\"node_modules/@gnosis.pm/safe-contracts/contracts/common/SelfAuthorized.sol\":{\"keccak256\":\"0x59d36efca578b75541a776f62a0d0ef03712fc27b6647c3915c14b572106d7bc\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://8530c6e0392415d42486847cd4368d30f6cac42051596330692a571fcdbb9e29\",\"dweb:/ipfs/QmWw51Pshw5t2sMKANzxtfNdBSQUyQQpfTr3Mi7oNJGk7U\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@gnosis.pm/=node_modules/@gnosis.pm/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@uniswap/=node_modules/@uniswap/",
+        ":base64-sol/=node_modules/base64-sol/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/",
+        ":solady/=node_modules/solady/",
+        ":solmate/=node_modules/solmate/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@gnosis.pm/safe-contracts/contracts/common/SelfAuthorized.sol": "SelfAuthorized"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@gnosis.pm/safe-contracts/contracts/common/SelfAuthorized.sol": {
+        "keccak256": "0x59d36efca578b75541a776f62a0d0ef03712fc27b6647c3915c14b572106d7bc",
+        "urls": [
+          "bzz-raw://8530c6e0392415d42486847cd4368d30f6cac42051596330692a571fcdbb9e29",
+          "dweb:/ipfs/QmWw51Pshw5t2sMKANzxtfNdBSQUyQQpfTr3Mi7oNJGk7U"
+        ],
+        "license": "LGPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@gnosis.pm/safe-contracts/contracts/common/SelfAuthorized.sol",
+    "id": 7025,
+    "exportedSymbols": {
+      "SelfAuthorized": [
+        7024
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "42:436:41",
+    "nodes": [
+      {
+        "id": 7000,
+        "nodeType": "PragmaDirective",
+        "src": "42:31:41",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 7024,
+        "nodeType": "ContractDefinition",
+        "src": "201:276:41",
+        "nodes": [
+          {
+            "id": 7016,
+            "nodeType": "FunctionDefinition",
+            "src": "231:102:41",
+            "nodes": [],
+            "body": {
+              "id": 7015,
+              "nodeType": "Block",
+              "src": "271:62:41",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 7011,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "id": 7005,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -15,
+                            "src": "289:3:41",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 7006,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "293:6:41",
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "src": "289:10:41",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "arguments": [
+                            {
+                              "id": 7009,
+                              "name": "this",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": -28,
+                              "src": "311:4:41",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_SelfAuthorized_$7024",
+                                "typeString": "contract SelfAuthorized"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_contract$_SelfAuthorized_$7024",
+                                "typeString": "contract SelfAuthorized"
+                              }
+                            ],
+                            "id": 7008,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "303:7:41",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": {
+                              "id": 7007,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "303:7:41",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 7010,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "303:13:41",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "289:27:41",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "4753303331",
+                        "id": 7012,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "318:7:41",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_b7248be3e8887f14d79f63d350787adcdb5e12b47898ebd6ef2aacf660fc9f17",
+                          "typeString": "literal_string \"GS031\""
+                        },
+                        "value": "GS031"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_b7248be3e8887f14d79f63d350787adcdb5e12b47898ebd6ef2aacf660fc9f17",
+                          "typeString": "literal_string \"GS031\""
+                        }
+                      ],
+                      "id": 7004,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "281:7:41",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 7013,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "281:45:41",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 7014,
+                  "nodeType": "ExpressionStatement",
+                  "src": "281:45:41"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requireSelfCall",
+            "nameLocation": "240:15:41",
+            "parameters": {
+              "id": 7002,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "255:2:41"
+            },
+            "returnParameters": {
+              "id": 7003,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "271:0:41"
+            },
+            "scope": 7024,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "private"
+          },
+          {
+            "id": 7023,
+            "nodeType": "ModifierDefinition",
+            "src": "339:136:41",
+            "nodes": [],
+            "body": {
+              "id": 7022,
+              "nodeType": "Block",
+              "src": "361:114:41",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 7018,
+                      "name": "requireSelfCall",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7016,
+                      "src": "440:15:41",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 7019,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "440:17:41",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 7020,
+                  "nodeType": "ExpressionStatement",
+                  "src": "440:17:41"
+                },
+                {
+                  "id": 7021,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "467:1:41"
+                }
+              ]
+            },
+            "name": "authorized",
+            "nameLocation": "348:10:41",
+            "parameters": {
+              "id": 7017,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "358:2:41"
+            },
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "SelfAuthorized",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 7001,
+          "nodeType": "StructuredDocumentation",
+          "src": "75:126:41",
+          "text": "@title SelfAuthorized - authorizes current contract to perform actions\n @author Richard Meissner - <richard@gnosis.pm>"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          7024
+        ],
+        "name": "SelfAuthorized",
+        "nameLocation": "210:14:41",
+        "scope": 7025,
+        "usedErrors": []
+      }
+    ],
+    "license": "LGPL-3.0-only"
+  },
+  "id": 41
+}

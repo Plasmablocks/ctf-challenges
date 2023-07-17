@@ -1,0 +1,353 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract GnosisSafeProxy",
+          "name": "proxy",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_singleton",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "initializer",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "saltNonce",
+          "type": "uint256"
+        }
+      ],
+      "name": "proxyCreated",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "proxyCreated(address,address,bytes,uint256)": "1e52b518"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract GnosisSafeProxy\",\"name\":\"proxy\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_singleton\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"initializer\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"saltNonce\",\"type\":\"uint256\"}],\"name\":\"proxyCreated\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@gnosis.pm/safe-contracts/contracts/proxies/IProxyCreationCallback.sol\":\"IProxyCreationCallback\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@gnosis.pm/=node_modules/@gnosis.pm/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@uniswap/=node_modules/@uniswap/\",\":base64-sol/=node_modules/base64-sol/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\",\":solady/=node_modules/solady/\",\":solmate/=node_modules/solmate/\"]},\"sources\":{\"node_modules/@gnosis.pm/safe-contracts/contracts/proxies/GnosisSafeProxy.sol\":{\"keccak256\":\"0x3bfdd453d9f896f7029d15bcafd11886957b320ad1764309d9f74fa059715249\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://5b5b7d0c8a900ba758e012236bf1c55e885fe5716aa79f6f693d22c31c85f7d5\",\"dweb:/ipfs/QmUq5oNsZY1b5pcYAzrY1i9oqyPUaiFhLaEWgB9ML6LrBj\"]},\"node_modules/@gnosis.pm/safe-contracts/contracts/proxies/IProxyCreationCallback.sol\":{\"keccak256\":\"0x51a9ce914a6a943651c803541e44218a7ed0a2f98a94d55df66b173b5a11e365\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://5216ed8181c14d462ec821593c8f90f33c7dbe8b4c505a1092bf31a9d33132b9\",\"dweb:/ipfs/Qmbb2wkgijuTcEbGR7CnmiAtwZDyruQ2b1ged4HnLysQnT\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract GnosisSafeProxy",
+              "name": "proxy",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_singleton",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initializer",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "saltNonce",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "proxyCreated"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@gnosis.pm/=node_modules/@gnosis.pm/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@uniswap/=node_modules/@uniswap/",
+        ":base64-sol/=node_modules/base64-sol/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/",
+        ":solady/=node_modules/solady/",
+        ":solmate/=node_modules/solmate/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@gnosis.pm/safe-contracts/contracts/proxies/IProxyCreationCallback.sol": "IProxyCreationCallback"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@gnosis.pm/safe-contracts/contracts/proxies/GnosisSafeProxy.sol": {
+        "keccak256": "0x3bfdd453d9f896f7029d15bcafd11886957b320ad1764309d9f74fa059715249",
+        "urls": [
+          "bzz-raw://5b5b7d0c8a900ba758e012236bf1c55e885fe5716aa79f6f693d22c31c85f7d5",
+          "dweb:/ipfs/QmUq5oNsZY1b5pcYAzrY1i9oqyPUaiFhLaEWgB9ML6LrBj"
+        ],
+        "license": "LGPL-3.0-only"
+      },
+      "node_modules/@gnosis.pm/safe-contracts/contracts/proxies/IProxyCreationCallback.sol": {
+        "keccak256": "0x51a9ce914a6a943651c803541e44218a7ed0a2f98a94d55df66b173b5a11e365",
+        "urls": [
+          "bzz-raw://5216ed8181c14d462ec821593c8f90f33c7dbe8b4c505a1092bf31a9d33132b9",
+          "dweb:/ipfs/Qmbb2wkgijuTcEbGR7CnmiAtwZDyruQ2b1ged4HnLysQnT"
+        ],
+        "license": "LGPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@gnosis.pm/safe-contracts/contracts/proxies/IProxyCreationCallback.sol",
+    "id": 7281,
+    "exportedSymbols": {
+      "GnosisSafeProxy": [
+        7264
+      ],
+      "IProxy": [
+        7233
+      ],
+      "IProxyCreationCallback": [
+        7280
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "42:266:48",
+    "nodes": [
+      {
+        "id": 7266,
+        "nodeType": "PragmaDirective",
+        "src": "42:31:48",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 7267,
+        "nodeType": "ImportDirective",
+        "src": "74:31:48",
+        "nodes": [],
+        "absolutePath": "node_modules/@gnosis.pm/safe-contracts/contracts/proxies/GnosisSafeProxy.sol",
+        "file": "./GnosisSafeProxy.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 7281,
+        "sourceUnit": 7265,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 7280,
+        "nodeType": "ContractDefinition",
+        "src": "107:200:48",
+        "nodes": [
+          {
+            "id": 7279,
+            "nodeType": "FunctionDefinition",
+            "src": "146:159:48",
+            "nodes": [],
+            "functionSelector": "1e52b518",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "proxyCreated",
+            "nameLocation": "155:12:48",
+            "parameters": {
+              "id": 7277,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7270,
+                  "mutability": "mutable",
+                  "name": "proxy",
+                  "nameLocation": "193:5:48",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7279,
+                  "src": "177:21:48",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GnosisSafeProxy_$7264",
+                    "typeString": "contract GnosisSafeProxy"
+                  },
+                  "typeName": {
+                    "id": 7269,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 7268,
+                      "name": "GnosisSafeProxy",
+                      "nameLocations": [
+                        "177:15:48"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 7264,
+                      "src": "177:15:48"
+                    },
+                    "referencedDeclaration": 7264,
+                    "src": "177:15:48",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GnosisSafeProxy_$7264",
+                      "typeString": "contract GnosisSafeProxy"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7272,
+                  "mutability": "mutable",
+                  "name": "_singleton",
+                  "nameLocation": "216:10:48",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7279,
+                  "src": "208:18:48",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7271,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "208:7:48",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7274,
+                  "mutability": "mutable",
+                  "name": "initializer",
+                  "nameLocation": "251:11:48",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7279,
+                  "src": "236:26:48",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7273,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "236:5:48",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7276,
+                  "mutability": "mutable",
+                  "name": "saltNonce",
+                  "nameLocation": "280:9:48",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7279,
+                  "src": "272:17:48",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7275,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "272:7:48",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "167:128:48"
+            },
+            "returnParameters": {
+              "id": 7278,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "304:0:48"
+            },
+            "scope": 7280,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IProxyCreationCallback",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          7280
+        ],
+        "name": "IProxyCreationCallback",
+        "nameLocation": "117:22:48",
+        "scope": 7281,
+        "usedErrors": []
+      }
+    ],
+    "license": "LGPL-3.0-only"
+  },
+  "id": 48
+}

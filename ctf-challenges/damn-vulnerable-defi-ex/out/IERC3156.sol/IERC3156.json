@@ -1,0 +1,67 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "node_modules/@openzeppelin/contracts/interfaces/IERC3156.sol",
+    "id": 29812,
+    "exportedSymbols": {
+      "IERC3156FlashBorrower": [
+        29831
+      ],
+      "IERC3156FlashLender": [
+        29869
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "92:99:20",
+    "nodes": [
+      {
+        "id": 29809,
+        "nodeType": "PragmaDirective",
+        "src": "92:23:20",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 29810,
+        "nodeType": "ImportDirective",
+        "src": "117:37:20",
+        "nodes": [],
+        "absolutePath": "node_modules/@openzeppelin/contracts/interfaces/IERC3156FlashBorrower.sol",
+        "file": "./IERC3156FlashBorrower.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 29812,
+        "sourceUnit": 29832,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 29811,
+        "nodeType": "ImportDirective",
+        "src": "155:35:20",
+        "nodes": [],
+        "absolutePath": "node_modules/@openzeppelin/contracts/interfaces/IERC3156FlashLender.sol",
+        "file": "./IERC3156FlashLender.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 29812,
+        "sourceUnit": 29870,
+        "symbolAliases": [],
+        "unitAlias": ""
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 20
+}

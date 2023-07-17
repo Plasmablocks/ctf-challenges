@@ -1,0 +1,367 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "contracts/climber/ClimberConstants.sol",
+    "id": 787,
+    "exportedSymbols": {
+      "ADMIN_ROLE": [
+        768
+      ],
+      "MAX_DELAY": [
+        780
+      ],
+      "MAX_TARGETS": [
+        774
+      ],
+      "MIN_TARGETS": [
+        777
+      ],
+      "PROPOSER_ROLE": [
+        771
+      ],
+      "WAITING_PERIOD": [
+        786
+      ],
+      "WITHDRAWAL_LIMIT": [
+        783
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:673:6",
+    "nodes": [
+      {
+        "id": 765,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:6",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 768,
+        "nodeType": "VariableDeclaration",
+        "src": "185:96:6",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "ADMIN_ROLE",
+        "nameLocation": "202:10:6",
+        "scope": 787,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_bytes32",
+          "typeString": "bytes32"
+        },
+        "typeName": {
+          "id": 766,
+          "name": "bytes32",
+          "nodeType": "ElementaryTypeName",
+          "src": "185:7:6",
+          "typeDescriptions": {
+            "typeIdentifier": "t_bytes32",
+            "typeString": "bytes32"
+          }
+        },
+        "value": {
+          "hexValue": "307861343938303732303563653464333535303932656635613861313866353665383931336366346132303166626532383738323562303935363933633231373735",
+          "id": 767,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "number",
+          "lValueRequested": false,
+          "nodeType": "Literal",
+          "src": "215:66:6",
+          "typeDescriptions": {
+            "typeIdentifier": "t_rational_74447917106227587185069542233768419360415527974423666340979253117352358844277_by_1",
+            "typeString": "int_const 7444...(69 digits omitted)...4277"
+          },
+          "value": "0xa49807205ce4d355092ef5a8a18f56e8913cf4a201fbe287825b095693c21775"
+        },
+        "visibility": "internal"
+      },
+      {
+        "id": 771,
+        "nodeType": "VariableDeclaration",
+        "src": "315:99:6",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "PROPOSER_ROLE",
+        "nameLocation": "332:13:6",
+        "scope": 787,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_bytes32",
+          "typeString": "bytes32"
+        },
+        "typeName": {
+          "id": 769,
+          "name": "bytes32",
+          "nodeType": "ElementaryTypeName",
+          "src": "315:7:6",
+          "typeDescriptions": {
+            "typeIdentifier": "t_bytes32",
+            "typeString": "bytes32"
+          }
+        },
+        "value": {
+          "hexValue": "307862303961613561656233373032636664353062366236326263343533323630343933386632313234386132376131643563613733363038326236383139636331",
+          "id": 770,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "number",
+          "lValueRequested": false,
+          "nodeType": "Literal",
+          "src": "348:66:6",
+          "typeDescriptions": {
+            "typeIdentifier": "t_rational_79880299296705742699333642239210630756328524875623738728757137919097174072513_by_1",
+            "typeString": "int_const 7988...(69 digits omitted)...2513"
+          },
+          "value": "0xb09aa5aeb3702cfd50b6b62bc4532604938f21248a27a1d5ca736082b6819cc1"
+        },
+        "visibility": "internal"
+      },
+      {
+        "id": 774,
+        "nodeType": "VariableDeclaration",
+        "src": "417:34:6",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "MAX_TARGETS",
+        "nameLocation": "434:11:6",
+        "scope": 787,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_uint256",
+          "typeString": "uint256"
+        },
+        "typeName": {
+          "id": 772,
+          "name": "uint256",
+          "nodeType": "ElementaryTypeName",
+          "src": "417:7:6",
+          "typeDescriptions": {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          }
+        },
+        "value": {
+          "hexValue": "323536",
+          "id": 773,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "number",
+          "lValueRequested": false,
+          "nodeType": "Literal",
+          "src": "448:3:6",
+          "typeDescriptions": {
+            "typeIdentifier": "t_rational_256_by_1",
+            "typeString": "int_const 256"
+          },
+          "value": "256"
+        },
+        "visibility": "internal"
+      },
+      {
+        "id": 777,
+        "nodeType": "VariableDeclaration",
+        "src": "453:32:6",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "MIN_TARGETS",
+        "nameLocation": "470:11:6",
+        "scope": 787,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_uint256",
+          "typeString": "uint256"
+        },
+        "typeName": {
+          "id": 775,
+          "name": "uint256",
+          "nodeType": "ElementaryTypeName",
+          "src": "453:7:6",
+          "typeDescriptions": {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          }
+        },
+        "value": {
+          "hexValue": "30",
+          "id": 776,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "number",
+          "lValueRequested": false,
+          "nodeType": "Literal",
+          "src": "484:1:6",
+          "typeDescriptions": {
+            "typeIdentifier": "t_rational_0_by_1",
+            "typeString": "int_const 0"
+          },
+          "value": "0"
+        },
+        "visibility": "internal"
+      },
+      {
+        "id": 780,
+        "nodeType": "VariableDeclaration",
+        "src": "487:36:6",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "MAX_DELAY",
+        "nameLocation": "504:9:6",
+        "scope": 787,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_uint256",
+          "typeString": "uint256"
+        },
+        "typeName": {
+          "id": 778,
+          "name": "uint256",
+          "nodeType": "ElementaryTypeName",
+          "src": "487:7:6",
+          "typeDescriptions": {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          }
+        },
+        "value": {
+          "hexValue": "3134",
+          "id": 779,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "number",
+          "lValueRequested": false,
+          "nodeType": "Literal",
+          "src": "516:7:6",
+          "subdenomination": "days",
+          "typeDescriptions": {
+            "typeIdentifier": "t_rational_1209600_by_1",
+            "typeString": "int_const 1209600"
+          },
+          "value": "14"
+        },
+        "visibility": "internal"
+      },
+      {
+        "id": 783,
+        "nodeType": "VariableDeclaration",
+        "src": "617:43:6",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "WITHDRAWAL_LIMIT",
+        "nameLocation": "634:16:6",
+        "scope": 787,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_uint256",
+          "typeString": "uint256"
+        },
+        "typeName": {
+          "id": 781,
+          "name": "uint256",
+          "nodeType": "ElementaryTypeName",
+          "src": "617:7:6",
+          "typeDescriptions": {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          }
+        },
+        "value": {
+          "hexValue": "31",
+          "id": 782,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "number",
+          "lValueRequested": false,
+          "nodeType": "Literal",
+          "src": "653:7:6",
+          "subdenomination": "ether",
+          "typeDescriptions": {
+            "typeIdentifier": "t_rational_1000000000000000000_by_1",
+            "typeString": "int_const 1000000000000000000"
+          },
+          "value": "1"
+        },
+        "visibility": "internal"
+      },
+      {
+        "id": 786,
+        "nodeType": "VariableDeclaration",
+        "src": "662:41:6",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "WAITING_PERIOD",
+        "nameLocation": "679:14:6",
+        "scope": 787,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_uint256",
+          "typeString": "uint256"
+        },
+        "typeName": {
+          "id": 784,
+          "name": "uint256",
+          "nodeType": "ElementaryTypeName",
+          "src": "662:7:6",
+          "typeDescriptions": {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          }
+        },
+        "value": {
+          "hexValue": "3135",
+          "id": 785,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "number",
+          "lValueRequested": false,
+          "nodeType": "Literal",
+          "src": "696:7:6",
+          "subdenomination": "days",
+          "typeDescriptions": {
+            "typeIdentifier": "t_rational_1296000_by_1",
+            "typeString": "int_const 1296000"
+          },
+          "value": "15"
+        },
+        "visibility": "internal"
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 6
+}

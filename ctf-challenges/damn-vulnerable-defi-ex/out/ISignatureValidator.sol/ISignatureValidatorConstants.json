@@ -1,0 +1,320 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220ed51693b99dab4b2fe6936a5a4c858e1661b865bd35bb85391936143d31c15ec64736f6c63430008130033",
+    "sourceMap": "75:161:46:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea2646970667358221220ed51693b99dab4b2fe6936a5a4c858e1661b865bd35bb85391936143d31c15ec64736f6c63430008130033",
+    "sourceMap": "75:161:46:-:0;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@gnosis.pm/safe-contracts/contracts/interfaces/ISignatureValidator.sol\":\"ISignatureValidatorConstants\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@gnosis.pm/=node_modules/@gnosis.pm/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@uniswap/=node_modules/@uniswap/\",\":base64-sol/=node_modules/base64-sol/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\",\":solady/=node_modules/solady/\",\":solmate/=node_modules/solmate/\"]},\"sources\":{\"node_modules/@gnosis.pm/safe-contracts/contracts/interfaces/ISignatureValidator.sol\":{\"keccak256\":\"0x5b6e9bf17f28738ce88e751f420b0559f5151ba7bec2ff3c7bb31e42673d6801\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://bfdde8390deb619e38f98be67c5f9d26f12623855540af76b9f454142d3896c1\",\"dweb:/ipfs/QmZrr1ocToR5S62W177qV2csfs7wCQNs3t9vatyx32uLXz\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@gnosis.pm/=node_modules/@gnosis.pm/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@uniswap/=node_modules/@uniswap/",
+        ":base64-sol/=node_modules/base64-sol/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/",
+        ":solady/=node_modules/solady/",
+        ":solmate/=node_modules/solmate/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@gnosis.pm/safe-contracts/contracts/interfaces/ISignatureValidator.sol": "ISignatureValidatorConstants"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@gnosis.pm/safe-contracts/contracts/interfaces/ISignatureValidator.sol": {
+        "keccak256": "0x5b6e9bf17f28738ce88e751f420b0559f5151ba7bec2ff3c7bb31e42673d6801",
+        "urls": [
+          "bzz-raw://bfdde8390deb619e38f98be67c5f9d26f12623855540af76b9f454142d3896c1",
+          "dweb:/ipfs/QmZrr1ocToR5S62W177qV2csfs7wCQNs3t9vatyx32uLXz"
+        ],
+        "license": "LGPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@gnosis.pm/safe-contracts/contracts/interfaces/ISignatureValidator.sol",
+    "id": 7225,
+    "exportedSymbols": {
+      "ISignatureValidator": [
+        7224
+      ],
+      "ISignatureValidatorConstants": [
+        7211
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "42:843:46",
+    "nodes": [
+      {
+        "id": 7207,
+        "nodeType": "PragmaDirective",
+        "src": "42:31:46",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 7211,
+        "nodeType": "ContractDefinition",
+        "src": "75:161:46",
+        "nodes": [
+          {
+            "id": 7210,
+            "nodeType": "VariableDeclaration",
+            "src": "176:57:46",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "EIP1271_MAGIC_VALUE",
+            "nameLocation": "201:19:46",
+            "scope": 7211,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes4",
+              "typeString": "bytes4"
+            },
+            "typeName": {
+              "id": 7208,
+              "name": "bytes4",
+              "nodeType": "ElementaryTypeName",
+              "src": "176:6:46",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes4",
+                "typeString": "bytes4"
+              }
+            },
+            "value": {
+              "hexValue": "30783230633133623062",
+              "id": 7209,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "223:10:46",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_549534475_by_1",
+                "typeString": "int_const 549534475"
+              },
+              "value": "0x20c13b0b"
+            },
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISignatureValidatorConstants",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          7211
+        ],
+        "name": "ISignatureValidatorConstants",
+        "nameLocation": "84:28:46",
+        "scope": 7225,
+        "usedErrors": []
+      },
+      {
+        "id": 7224,
+        "nodeType": "ContractDefinition",
+        "src": "238:646:46",
+        "nodes": [
+          {
+            "id": 7223,
+            "nodeType": "FunctionDefinition",
+            "src": "774:108:46",
+            "nodes": [],
+            "documentation": {
+              "id": 7214,
+              "nodeType": "StructuredDocumentation",
+              "src": "314:455:46",
+              "text": " @dev Should return whether the signature provided is valid for the provided data\n @param _data Arbitrary length data signed on the behalf of address(this)\n @param _signature Signature byte array associated with _data\n MUST return the bytes4 magic value 0x20c13b0b when function passes.\n MUST NOT modify state (using STATICCALL for solc < 0.5, view modifier for solc > 0.5)\n MUST allow external calls"
+            },
+            "functionSelector": "20c13b0b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isValidSignature",
+            "nameLocation": "783:16:46",
+            "parameters": {
+              "id": 7219,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7216,
+                  "mutability": "mutable",
+                  "name": "_data",
+                  "nameLocation": "813:5:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7223,
+                  "src": "800:18:46",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7215,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "800:5:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7218,
+                  "mutability": "mutable",
+                  "name": "_signature",
+                  "nameLocation": "833:10:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7223,
+                  "src": "820:23:46",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7217,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "820:5:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "799:45:46"
+            },
+            "returnParameters": {
+              "id": 7222,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7221,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7223,
+                  "src": "874:6:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 7220,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "874:6:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "873:8:46"
+            },
+            "scope": 7224,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 7212,
+              "name": "ISignatureValidatorConstants",
+              "nameLocations": [
+                "279:28:46"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 7211,
+              "src": "279:28:46"
+            },
+            "id": 7213,
+            "nodeType": "InheritanceSpecifier",
+            "src": "279:28:46"
+          }
+        ],
+        "canonicalName": "ISignatureValidator",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          7224,
+          7211
+        ],
+        "name": "ISignatureValidator",
+        "nameLocation": "256:19:46",
+        "scope": 7225,
+        "usedErrors": []
+      }
+    ],
+    "license": "LGPL-3.0-only"
+  },
+  "id": 46
+}

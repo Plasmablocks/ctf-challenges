@@ -1,0 +1,20 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "test/unstoppable/UnstoppableTest.sol",
+    "id": 9828,
+    "exportedSymbols": {},
+    "nodeType": "SourceUnit",
+    "src": "0:0:12",
+    "nodes": []
+  },
+  "id": 12
+}
